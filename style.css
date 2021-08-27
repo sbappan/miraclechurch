@@ -1,0 +1,204 @@
+/* Site CSS starts */
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Spectral', serif;
+}
+
+header {
+  padding: 4vw 3vw 2vw 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+nav {
+  width: 65vw;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0 1rem;
+  list-style-type: none;
+  color: rgb(145, 49, 47);
+  font-size: 14px;
+  font-family: 'Karla', sans-serif;
+}
+
+nav ul li:first-child {
+  color: rgba(145, 49, 47, .4);
+}
+
+.socialIcons>* {
+  padding: 0 .5rem;
+  color: black;
+  text-decoration: none;
+}
+
+section.hero {
+  min-height: 110vh;
+  padding-top: 30vh;
+  padding-bottom: 15vh;
+  background: linear-gradient(rgba(145, 49, 47, .2), rgba(145, 49, 47, .2)), url(./assets/img/banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+section.hero>* {
+  font-weight: 300;
+  text-align: center;
+}
+
+section.hero h1 {
+  font-size: 9rem;
+}
+
+section.hero h2 {
+  font-size: 2.5rem;
+  font-style: italic;
+  padding-bottom: 3vh;
+}
+
+section.hero p {
+  width: 50vw;
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: left;
+  line-height: 1.6;
+}
+
+section.connected h2 {
+  font-size: 7rem;
+  color: rgb(176, 49, 43);
+  font-weight: 300;
+  padding: 10vh 0;
+  text-align: center;
+}
+
+section.connected>div {
+  margin: 0 auto 8vh;
+  width: 90vw;
+  min-height: 60rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #ffffff;
+}
+
+section.connected>div>div {
+  display: grid;
+  grid-template-rows: 60% 40%;
+}
+
+section.connected>div>div:first-child {
+  background: linear-gradient(rgba(145, 49, 47, .2), rgba(145, 49, 47, .2)), url(./assets/img/getConnected1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.connected>div>div:last-child {
+  background: linear-gradient(rgba(145, 49, 47, .2), rgba(145, 49, 47, .2)), url(./assets/img/getConnected2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.connected>div>div>* {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section.connected>div>div a {
+  color: unset;
+}
+
+section.connected>div>div>p {
+  font-size: 4rem;
+  font-weight: 300;
+  padding-bottom: 5vh;
+}
+
+section.connected>div>div>div {
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 1.6;
+  background: linear-gradient(rgba(145, 49, 47, .4), rgba(145, 49, 47, .4));
+}
+
+section.connected>div>div>div>p {
+  width: 50%;
+  text-align: left;
+}
+
+/* Media queries start */
+/* Smaller desktop Media queries start */
+@media only screen and (max-width: 1500px) {
+  nav {
+    width: 80vw;
+  }
+
+  section.connected>div {
+    width: 80vw;
+  }
+
+  section.connected>div>div>div>p {
+    width: 80%;
+  }
+}
+
+/* Smaller desktop Media queries end */
+
+/* Mobile Media queries start */
+@media only screen and (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+
+  section.hero {
+    padding-top: 4vh;
+  }
+
+  section.hero h1 {
+    font-size: 6rem;
+  }
+
+  section.hero p {
+    width: 70vw;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .9);
+  }
+
+  section.connected>div {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.connected>div>div {
+    grid-template-rows: auto auto;
+  }
+
+  section.connected>div>div>div>p {
+    padding: 8vh 0;
+  }
+
+  section.connected>div>div>p {
+    padding: 8vh 2vw;
+  }
+}
+
+/* Mobile Media queries end */
+/* Media queries end */
