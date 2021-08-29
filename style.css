@@ -3,12 +3,16 @@
   font-size: 62.5%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Spectral', serif;
 }
 
 header {
-  padding: 4vw 3vw 2vw 4vw;
+  padding: 3vh 3vw 3vh 4vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,6 +39,15 @@ nav ul li {
 
 nav ul li:first-child {
   color: rgba(145, 49, 47, .4);
+}
+
+nav ul li a {
+  color: unset;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgba(145, 49, 47, .5);
 }
 
 .socialIcons>* {
@@ -141,6 +154,404 @@ section.connected>div>div>div {
 section.connected>div>div>div>p {
   width: 50%;
   text-align: left;
+}
+
+section.happening {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section.happening div.content {
+  background-color: #ebe1e2;
+  color: #91312F;
+}
+
+section.happening div.content a {
+  color: unset;
+}
+
+section.happening div.container {
+  width: 60%;
+  margin: 10vh auto;
+}
+
+section.happening div.details {
+  text-align: center;
+}
+
+section.happening div.details h2 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+section.happening div.details h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+section.happening div.details p {
+  font-size: 1.5rem;
+}
+
+section.happening div.timings {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem
+}
+
+section.happening div.timings>div {
+  text-align: center;
+}
+
+section.happening div.timings>div>p.name {
+  font-size: 2.2rem;
+  font-weight: 200;
+  margin: 2rem 0 .5rem;
+}
+
+section.happening div.timings>div>p.timing {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+section.happening .diaryBackground {
+  background: url(./assets/img/jess-bailey-mexeVPlTB6k-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.knowUs {
+  background-color: #91312F;
+  padding: 10vh 0;
+  color: rgba(255, 255, 255, .9);
+}
+
+section.knowUs>div:first-child {
+  width: 60vw;
+  min-height: 50vh;
+  margin: 0 auto 5vh;
+  background: url(./assets/img/logoWithName.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section.knowUs>h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+section.knowUs div:last-child {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+section.knowUs div:last-child p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 2rem 0;
+  text-align: left;
+}
+
+.linkButton {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+
+  padding: 1rem 2rem;
+  color: whitesmoke;
+  border: 1px solid white;
+}
+
+section.knowUs .linkButton:hover {
+  color: #91312F;
+  background-color: whitesmoke;
+}
+
+section.knowUs div:last-child p:last-child {
+  text-align: center;
+}
+
+section.pastors {
+  color: #b0312b;
+  background-color: #ebe1e2;
+  padding: 10vh 15vw;
+  text-align: center;
+}
+
+section.pastors h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+section.pastors h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+section.pastors>div:last-child {
+  margin-top: 10vh;
+  display: grid;
+  gap: 0 5vh;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.pastor1,
+div.pastor2,
+div.pastor3 {
+  min-height: 30rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+section.pastors div.pastor1 {
+  background-image: url(./assets/img/rev.thomas_gnanasekar.webp);
+}
+
+section.pastors div.pastor2 {
+  background-image: url(./assets/img/john_gnanasekar.webp);
+}
+
+section.pastors div.pastor3 {
+  background-image: url(./assets/img/philip_stoffels.webp);
+}
+
+section.pastors div div p {
+  font-weight: 300;
+}
+
+section.pastors p.pastorName {
+  font-size: 2.2rem;
+  padding-top: 5rem;
+}
+
+section.pastors p.pastorTitle {
+  font-size: 1.8rem;
+  padding: 5rem 0 3rem;
+}
+
+section.pastors p.pastorDescription {
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+section.ministries {
+  color: #91312F;
+  padding-top: 10vh;
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.ministries h2 {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+section.ministries>div:first-child>p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 5vh 0 10vh;
+}
+
+section.ministries .youthAndKids,
+section.ministries .missions,
+section.ministries .mabs {
+  min-height: 45rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+section.ministries .youthAndKids {
+  background-image: url(./assets/img/youthAndKids.webp);
+}
+
+section.ministries .missions {
+  background-image: url(./assets/img/missions.webp);
+}
+
+section.ministries .mabs {
+  background-image: url(./assets/img/MABS_Logo.webp);
+}
+
+section.ministries h4 {
+  font-size: 2.8rem;
+  font-weight: 200;
+  padding: 5rem 0 3rem;
+}
+
+section.ministries .container {
+  padding-bottom: 8rem;
+}
+
+section.ministries .container p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.6;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  text-align: left;
+}
+
+section.ministries .container p:last-child {
+  padding-bottom: 0;
+}
+
+section.faith {
+  min-height: 50vh;
+}
+
+section.faith>div {
+  min-height: 50vh;
+  padding: 0 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section.faith>div>div:first-child {
+  min-height: 100%;
+  background-image: url(./assets/img/patrick-fore-b_SHPU5M3nk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.faith>div>div:last-child {
+  background-color: #a49999;
+  color: #ffffff;
+  padding: 20% 20%;
+}
+
+section.faith h3 {
+  font-size: 4rem;
+  font-weight: 300;
+  padding-bottom: 3rem;
+}
+
+section.faith p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 5rem;
+}
+
+section.faith .linkButton:hover {
+  color: #a49999;
+  background-color: whitesmoke;
+}
+
+section.contactUs {
+  min-height: 90vh;
+  margin-top: 10vh;
+  padding: 10vh 20vw;
+  background-color: #EBE1E2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  color: #91312F;
+}
+
+section.contactUs h3 {
+  font-size: 4rem;
+  font-weight: 300;
+  padding-bottom: 3rem;
+}
+
+section.contactUs p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+section.contactUs .serviceTimings {
+  padding: 3rem 0;
+}
+
+section.contactUs .socialIcons {
+  padding: 1rem 0 3rem;
+}
+
+section.contactUs .hidden {
+  display: none;
+}
+
+section.contactUs input,
+section.contactUs textarea {
+  color: inherit;
+  width: 100%;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #91312F;
+  background-color: inherit;
+  min-height: 5rem;
+}
+
+section.contactUs input:focus,
+section.contactUs textarea:focus {
+  border: 1px solid #91312F;
+}
+
+section.contactUs input::placeholder,
+section.contactUs textarea::placeholder {
+  color: inherit;
+  font-size: inherit;
+}
+
+section.contactUs form>* {
+  padding-bottom: 2rem;
+}
+
+section.contactUs .basicInfo {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  column-gap: 10%;
+}
+
+section.contactUs form button {
+  width: 100%;
+  background-color: #91312F;
+  color: #ffffff;
+  min-height: 5rem;
+
+  border: 0;
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+section.contactUs form button:hover {
+  cursor: pointer;
+  background-color: rgba(145, 49, 47, .8);
+}
+
+footer {
+  text-align: center;
+  color: #91312F;
+  min-height: 20vh;
+}
+
+footer>div:first-child {
+  padding-top: 4rem;
+}
+
+footer p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+footer .socialIcons {
+  padding: 3rem 0;
+}
+
+footer>p:last-child {
+  padding-bottom: 3rem;
 }
 
 /* Media queries start */
